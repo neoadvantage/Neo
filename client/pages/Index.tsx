@@ -28,7 +28,9 @@ import {
 
 const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+  const [formData, setFormData] = useState<ContactFormData>({
     fullName: "",
     company: "",
     email: "",
@@ -38,9 +40,49 @@ const Index = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsModalOpen(false);
-    // TODO: Add backend integration
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result: ContactResponse = await response.json();
+
+      if (result.success) {
+        toast({
+          title: "Success!",
+          description: result.message,
+        });
+        setFormData({
+          fullName: "",
+          company: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+        setIsModalOpen(false);
+      } else {
+        toast({
+          title: "Error",
+          description: result.message,
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (
