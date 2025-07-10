@@ -296,10 +296,8 @@ const Index = () => {
               NEO
             </h2>
             <div className="text-xl text-neo-blue-700 max-w-3xl mx-auto text-balance space-y-4">
-              <p>
-                NEO é o novo tempo. Um ponto sem retorno. Disrupção, velocidade,
-                excesso.
-              </p>
+              <p>NEO é o novo tempo. Um ponto sem retorno.</p>
+              <p>Disrupção, velocidade, excesso.</p>
               <p>O chuveiro aquece, o micro-ondas esquenta, o SSD liga.</p>
               <p>Tudo precisa ser agora, automático, previsível e rápido.</p>
               <p>O digital não é mais uma camada: é o próprio mundo.</p>
