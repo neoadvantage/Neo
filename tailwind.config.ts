@@ -65,20 +65,24 @@ export default {
           border: "hsla(var(--glass-border))",
           shadow: "hsla(var(--glass-shadow))",
         },
-            borderRadius: {
+      },
+      borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "neo-gradient": "linear-gradient(135deg, hsl(var(--neo-blue-500)) 0%, hsl(var(--neo-blue-800)) 50%, hsl(var(--neo-blue-950)) 100%)",
-        "neo-gradient-light": "linear-gradient(135deg, hsl(var(--neo-blue-50)) 0%, hsl(var(--neo-blue-100)) 100%)",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "neo-gradient":
+          "linear-gradient(135deg, hsl(var(--neo-blue-500)) 0%, hsl(var(--neo-blue-800)) 50%, hsl(var(--neo-blue-950)) 100%)",
+        "neo-gradient-light":
+          "linear-gradient(135deg, hsl(var(--neo-blue-50)) 0%, hsl(var(--neo-blue-100)) 100%)",
       },
       boxShadow: {
-        "glass": "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-        "neo": "0 25px 50px -12px rgba(59, 130, 246, 0.25)",
+        glass: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+        neo: "0 25px 50px -12px rgba(59, 130, 246, 0.25)",
         "neo-lg": "0 35px 60px -12px rgba(59, 130, 246, 0.35)",
       },
       keyframes: {
@@ -98,11 +102,37 @@ export default {
             height: "0",
           },
         },
+        float: {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+          },
+        },
+        fadeIn: {
+          from: {
+            opacity: "0",
+          },
+          to: {
+            opacity: "1",
+          },
+        },
+        slideUp: {
+          from: {
+            opacity: "0",
+            transform: "translateY(30px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
-            animation: {
+      animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "float": "float 6s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
         "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "fade-in": "fadeIn 0.6s ease-out",
         "slide-up": "slideUp 0.6s ease-out",
