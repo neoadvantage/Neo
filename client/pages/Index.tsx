@@ -370,10 +370,10 @@ const Index = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-neo-blue-900 mb-6">
-              Our Services
+              Por que a NEO Advantage?
             </h2>
             <p className="text-xl text-neo-blue-700 max-w-3xl mx-auto text-balance">
-              Comprehensive web solutions tailored to your business needs.
+              Entregamos um canal de venda automatizado e pronto para usar.
             </p>
           </motion.div>
 
@@ -381,38 +381,32 @@ const Index = () => {
             {[
               {
                 icon: Monitor,
-                title: "Custom Design",
-                description:
-                  "Unique, responsive, and visually stunning websites tailored to your brand.",
+                title: "Máquina de Vendas",
+                description: "Para escalar rápido com estrutura.",
                 features: [
-                  "Custom UI/UX Design",
-                  "Mobile-First Approach",
-                  "Brand Integration",
-                  "User Experience Optimization",
+                  "Segmentação, campanhas personalizadas.",
+                  "Relatórios, painéis de desempenho.",
+                  "Agentes de IA prontos pra uso.",
                 ],
               },
               {
                 icon: Smartphone,
-                title: "Development",
-                description:
-                  "Modern, fast, and secure websites built with the latest technologies.",
+                title: "Criador de conteúdo",
+                description: "Para produzir conteúdo assertivo.",
                 features: [
-                  "React & Next.js",
-                  "Performance Optimization",
-                  "SEO Integration",
-                  "Security Best Practices",
+                  "Manual de identidade visual completa.",
+                  "Recursos gráficos para vídeo e post.",
+                  "Kit visual de vídeo.",
                 ],
               },
               {
                 icon: Globe,
-                title: "Digital Strategy",
-                description:
-                  "Complete digital presence management from design to deployment.",
+                title: "Site ou landing page",
+                description: "Para marcar território digital.",
                 features: [
-                  "Analytics Setup",
-                  "Conversion Optimization",
-                  "Content Strategy",
-                  "Ongoing Support",
+                  "Estratégia de posicionamento",
+                  "Autoridade instantânea",
+                  "Conversão turbinada",
                 ],
               },
             ].map((service, index) => (
