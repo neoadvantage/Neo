@@ -47,21 +47,39 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        "neo-blue": {
+          50: "hsl(var(--neo-blue-50))",
+          100: "hsl(var(--neo-blue-100))",
+          200: "hsl(var(--neo-blue-200))",
+          300: "hsl(var(--neo-blue-300))",
+          400: "hsl(var(--neo-blue-400))",
+          500: "hsl(var(--neo-blue-500))",
+          600: "hsl(var(--neo-blue-600))",
+          700: "hsl(var(--neo-blue-700))",
+          800: "hsl(var(--neo-blue-800))",
+          900: "hsl(var(--neo-blue-900))",
+          950: "hsl(var(--neo-blue-950))",
         },
-      },
-      borderRadius: {
+        glass: {
+          bg: "hsla(var(--glass-bg))",
+          border: "hsla(var(--glass-border))",
+          shadow: "hsla(var(--glass-shadow))",
+        },
+            borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "neo-gradient": "linear-gradient(135deg, hsl(var(--neo-blue-500)) 0%, hsl(var(--neo-blue-800)) 50%, hsl(var(--neo-blue-950)) 100%)",
+        "neo-gradient-light": "linear-gradient(135deg, hsl(var(--neo-blue-50)) 0%, hsl(var(--neo-blue-100)) 100%)",
+      },
+      boxShadow: {
+        "glass": "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+        "neo": "0 25px 50px -12px rgba(59, 130, 246, 0.25)",
+        "neo-lg": "0 35px 60px -12px rgba(59, 130, 246, 0.35)",
       },
       keyframes: {
         "accordion-down": {
@@ -81,9 +99,14 @@ export default {
           },
         },
       },
-      animation: {
+            animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 6s ease-in-out infinite",
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "fade-in": "fadeIn 0.6s ease-out",
+        "slide-up": "slideUp 0.6s ease-out",
+        "spin-slow": "spin 3s linear infinite",
       },
     },
   },
