@@ -11,6 +11,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { ContactFormData, ContactResponse } from "@shared/api";
 import {
   Zap,
   Palette,
@@ -21,6 +23,7 @@ import {
   CheckCircle,
   Star,
   ArrowRight,
+  Loader2,
 } from "lucide-react";
 
 const Index = () => {
