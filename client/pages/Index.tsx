@@ -151,9 +151,9 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Websites that convert.{" "}
+              Web design que converte,{" "}
               <span className="bg-gradient-to-r from-neo-blue-200 to-white bg-clip-text text-transparent">
-                Results that scale.
+                Resultados que escalam.
               </span>
             </motion.h1>
 
