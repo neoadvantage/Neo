@@ -322,20 +322,15 @@ const Index = () => {
                 key={feature.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="group"
+                className="group max-w-2xl"
               >
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-neo transition-all duration-300 hover:-translate-y-2 border border-neo-blue-100">
-                  <div className="mb-6">
-                    <feature.icon
-                      className={`h-12 w-12 ${feature.color} group-hover:scale-110 transition-transform duration-300`}
-                    />
-                  </div>
-                  <h3 className="text-2xl font-bold text-neo-blue-900 mb-4">
+                <div className="bg-white rounded-2xl p-12 shadow-neo hover:shadow-neo-lg transition-all duration-300 hover:-translate-y-2 border border-neo-blue-100">
+                  <h3 className="text-3xl font-bold text-neo-blue-900 mb-6 text-center">
                     {feature.title}
                   </h3>
-                  <p className="text-neo-blue-700 leading-relaxed">
+                  <p className="text-neo-blue-700 leading-relaxed text-lg text-center">
                     {feature.description}
                   </p>
                 </div>
