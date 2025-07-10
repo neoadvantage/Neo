@@ -10,3 +10,23 @@
 export interface DemoResponse {
   message: string;
 }
+
+/**
+ * Contact form data structure
+ */
+export interface ContactFormData {
+  fullName: string;
+  company?: string;
+  email: string;
+  phone?: string;
+  message?: string;
+}
+
+/**
+ * Contact form submission response
+ */
+export interface ContactResponse {
+  success: boolean;
+  message: string;
+  data?: ContactFormData;
+}
