@@ -293,11 +293,25 @@ const Index = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-neo-blue-900 mb-6">
-              Why NEO Advantage?
+              NEO
             </h2>
             <p className="text-xl text-neo-blue-700 max-w-3xl mx-auto text-balance">
-              We combine cutting-edge design with conversion-focused strategy to
-              deliver websites that don't just look great—they perform.
+              NEO é o novo tempo. Um ponto sem retorno. Disrupção, velocidade,
+              excesso.
+              <br />
+              <br />
+              O chuveiro aquece, o micro-ondas esquenta, o SSD liga.
+              <br />
+              <br />
+              Tudo precisa ser agora, automático, previsível e rápido.
+              <br />
+              <br />
+              A atenção virou campo de guerra.
+              <br />
+              <br />
+              O digital não é mais uma camada: é o próprio mundo.
+              <br />
+              <br />A Onda NEO arrasta quem hesita.
             </p>
           </motion.div>
 
@@ -305,23 +319,23 @@ const Index = () => {
             {[
               {
                 icon: TrendingUp,
-                title: "Performance",
+                title: "Fluxo Ultrarrápido",
                 description:
-                  "Lightning-fast websites optimized for search engines and user experience.",
+                  "Conteúdo ultra rápido sobrecarrega a atenção da audiência. Agilidade é crucial.",
                 color: "text-neo-blue-600",
               },
               {
                 icon: Palette,
                 title: "Design",
                 description:
-                  "Stunning, modern designs that capture your brand and captivate your audience.",
+                  "Criamos identidades visuais que comunicam com clareza e dominam o ruído das redes.",
                 color: "text-neo-blue-600",
               },
               {
                 icon: Zap,
                 title: "Conversion",
                 description:
-                  "Strategic design elements proven to turn visitors into customers.",
+                  "Automação, IA e dados convergem para um só objetivo: transformar cliques em clientes com precisão cirúrgica.",
                 color: "text-neo-blue-600",
               },
             ].map((feature, index) => (
