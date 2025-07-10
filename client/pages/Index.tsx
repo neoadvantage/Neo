@@ -295,24 +295,17 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-neo-blue-900 mb-6">
               NEO
             </h2>
-            <p className="text-xl text-neo-blue-700 max-w-3xl mx-auto text-balance">
-              NEO é o novo tempo. Um ponto sem retorno. Disrupção, velocidade,
-              excesso.
-              <br />
-              <br />
-              O chuveiro aquece, o micro-ondas esquenta, o SSD liga.
-              <br />
-              <br />
-              Tudo precisa ser agora, automático, previsível e rápido.
-              <br />
-              <br />
-              A atenção virou campo de guerra.
-              <br />
-              <br />
-              O digital não é mais uma camada: é o próprio mundo.
-              <br />
-              <br />A Onda NEO arrasta quem hesita.
-            </p>
+            <div className="text-xl text-neo-blue-700 max-w-3xl mx-auto text-balance space-y-4">
+              <p>
+                NEO é o novo tempo. Um ponto sem retorno. Disrupção, velocidade,
+                excesso.
+              </p>
+              <p>O chuveiro aquece, o micro-ondas esquenta, o SSD liga.</p>
+              <p>Tudo precisa ser agora, automático, previsível e rápido.</p>
+              <p>O digital não é mais uma camada: é o próprio mundo.</p>
+              <p>A atenção virou campo de guerra.</p>
+              <p>A Onda NEO arrasta quem hesita.</p>
+            </div>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
