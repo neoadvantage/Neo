@@ -738,9 +738,17 @@ const Index = () => {
                   </div>
                   <Button
                     type="submit"
+                    disabled={isSubmitting}
                     className="w-full bg-neo-blue-600 hover:bg-neo-blue-700 text-white"
                   >
-                    Schedule Consultation
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Submitting...
+                      </>
+                    ) : (
+                      "Schedule Consultation"
+                    )}
                   </Button>
                 </form>
               </DialogContent>
