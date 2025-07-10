@@ -308,27 +308,13 @@ const Index = () => {
             </div>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex justify-center">
             {[
               {
-                icon: TrendingUp,
-                title: "Fluxo Ultrarrápido",
-                description:
-                  "Conteúdo ultra rápido sobrecarrega a atenção da audiência. Agilidade é crucial.",
-                color: "text-neo-blue-600",
-              },
-              {
                 icon: Palette,
-                title: "Design",
+                title: "A única saída...",
                 description:
-                  "Criamos identidades visuais que comunicam com clareza e dominam o ruído das redes.",
-                color: "text-neo-blue-600",
-              },
-              {
-                icon: Zap,
-                title: "Conversion",
-                description:
-                  "Automação, IA e dados convergem para um só objetivo: transformar cliques em clientes com precisão cirúrgica.",
+                  "É novas tecnologias e criatividade para transformar desafios em oportunidades. Adaptar-se rapidamente às mudanças e antecipar tendências é essencial para quem quer se destacar e prosperar nesse novo cenário dinâmico e em constante evolução.",
                 color: "text-neo-blue-600",
               },
             ].map((feature, index) => (
